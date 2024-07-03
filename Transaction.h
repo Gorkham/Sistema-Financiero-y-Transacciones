@@ -21,8 +21,22 @@ class Transaction {
     Transaction(int,int,int,int,string,string,string);
     ~Transaction();
 
-    int getId() {
-        return id;
-    }
+    // Getters
+    int getId();
+    int getSourceAccount();
+    int getDestinationAccount();
+    int getAmount();
+    string getGeographicLocation();
+    string getDate();
+    string getHour();
+
+    // Setters
+    void setId(int id);
+    void setSourceAccount(int SourceAccount);
+    void setDestinationAccount(int DestinationAccount);
+    void setAmount(int Amount);
+    void setGeographicLocation(string GeographicLocation);
+    void setDate(string date);
+    void setHour(string hour);
 
 };

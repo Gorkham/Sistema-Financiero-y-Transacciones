@@ -58,8 +58,6 @@ void SystemBank::saveTransaction() {
 
         TransactionNode* transactionNode = new TransactionNode(*transaction = new Transaction(id,SourceAccount,DestinationAccount,Amount,GeographicLocation,date,hour));
 
-        cout << id << endl;
-
         parts.clear();
 
     }
