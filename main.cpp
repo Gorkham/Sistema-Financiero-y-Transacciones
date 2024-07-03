@@ -1,10 +1,15 @@
 #include <iostream>
 
+#include "SystemBank.cpp"
+
 using namespace std;
 
 
 int main()
 {
-    cout << "hola" << endl;
+    
+    SystemBank bank;
+
+    bank.menu();
     return 0;
 }
