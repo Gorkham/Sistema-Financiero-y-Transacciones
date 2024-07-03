@@ -8,6 +8,10 @@ using namespace std;
 
 AVLTree::AVLTree(TransactionNode* root) { this->root = root; }
 
+AVLTree::AVLTree() {
+    root = nullptr;
+}
+
 int AVLTree::height(TransactionNode* node) {
     if (node) {
         return node->getHeight();

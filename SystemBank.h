@@ -7,6 +7,7 @@
 
 #include "Transaction.cpp"
 #include "TransactionNode.cpp"
+#include "AVLTree.cpp"
 
 using namespace std;
 
@@ -14,7 +15,7 @@ class SystemBank {
 
     private:
 
-    vector<TransactionNode> listTransaction;
+    AVLTree treeAVL;
     void saveTransaction();
 
     public:
@@ -22,6 +23,8 @@ class SystemBank {
     SystemBank();
 
     void menu();
+
+    void printTransactions();
 
 
 

@@ -26,6 +26,7 @@ class AVLTree {
     public:
 
     AVLTree(TransactionNode*);
+    AVLTree();
     void insert(Transaction* transaction);
     void eliminate(int id);
     Transaction* search(int id);

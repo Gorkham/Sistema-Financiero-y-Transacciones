@@ -11,5 +11,6 @@ int main()
     SystemBank bank;
 
     bank.menu();
+    bank.printTransactions();
     return 0;
 }
